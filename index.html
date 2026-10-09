@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="board">
+        <form id="form">
+            <div class="type">
+                <input type="text" placeholder="Enter your task" id="inp">
+                <select name="status" id="task-status">
+                    <option value="todo">to-do</option>
+                    <option value="doing">inprogress</option>
+                    <option value="done">Done</option>
+                </select>
+            </div>
+            <button class="btn" type="submit" style="background-color: #FFDCCC;">Add+</button>
+        </form>
+
+        <div class="lanes">
+            <div class="lane" id="todo">
+                <h3 style="background-color: #B7B1F2;">TO-DO</h3>
+            </div>
+            <div class="lane" id="doing">
+                <h3>Inprogress</h3>
+            </div>
+            <div class="lane" id="done">
+                <h3 style="background-color: #ECEFCA;">Done</h3>
+                <!-- <div class="card">
+                    <p> sample task</p>
+                    <div class="del-btn"><button>Delete</button></div>
+                </div> -->
+                
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
